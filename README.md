@@ -26,8 +26,8 @@ API para encurtamento de URLs construída com NestJS e MySQL, com autenticação
 ### 1. Clonar o repositório
 
 ```bash
-git clone <URL-DO-REPOSITORIO>
-cd <NOME-DA-PASTA-DO-PROJETO>
+git clone <https://github.com/JeffersonMeira99/url.git>
+cd <url>
 ```
 
 ### 2. Instalar dependências
@@ -290,10 +290,9 @@ DELETE /a1b2c3
 ![Remover URL](docs/images/deleteBearerToken.png)
 ![Requisição com token](docs/images/bearerTokenShorten.png)
 
+## Os exemplos de requisição para importar no Postman etc, estão disponíveis em:
 
-## Os exemplos de requisição para importar no Postman etc,  estão disponíveis em:
-
-> Pasta 
+> Pasta
 
 docs > api
 
