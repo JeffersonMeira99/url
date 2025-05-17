@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      DATABASE_URL: 'mysql://bd-user-url:url1234@mysql:3307/bd_url'
+    depends_on:
+      - mysql
+
+  mysql:
+    container_name: url-mysql
+    image: mysql:8.0.39
+    environment:
+      MYSQL_ROOT_PASSWORD: 'url1234'
+      MYSQL_DATABASE: 'bd_url'
+      MYSQL_USER: 'bd-user-url'
+      MYSQL_PASSWORD: 'url1234'
+    ports:
+      - '3307:3306'
